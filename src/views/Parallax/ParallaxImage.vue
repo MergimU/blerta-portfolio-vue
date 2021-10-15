@@ -1,9 +1,8 @@
 <template>
   <div
-    class="parallax"
     ref="img"
     :class="image.name"
-    :speed="image.dataSpeed"
+    :data-speed="image.dataSpeed"
     :data-revert="image.dataRevert"
   >
     <img :src="image.src" />
@@ -11,6 +10,8 @@
 </template>
 
 <script>
+import { gsap } from "gsap";
+
 export default {
   name: "ParallaxImage",
   props: {
@@ -20,23 +21,18 @@ export default {
   watch: {
     coords: {
       handler() {
-        let speed = this.$refs.img.getAttribute("speed");
-        const revert = this.$refs.img.getAttribute("revert");
+        let speed = Number(this.$refs.img.getAttribute("data-speed"));
+        const revert = this.$refs.img.getAttribute("data-revert");
+
         if (revert) speed *= -1;
 
         let { x, y } = this.coords;
 
-        const scale = (
-          this.$refs.img.getBoundingClientRect().width /
-          this.$refs.img.offsetWidth
-        ).toFixed(2);
-
-        console.log("x", x * speed);
-        console.log("y", y * speed);
-
-        this.$refs.img.style.transform = `scale(${scale}) translate3d(${
-          1 - x * speed
-        }px, ${1 - y * speed}px, 0px)`;
+        gsap.to(this.$refs.img, {
+          x: 1 - x * speed,
+          y: 1 - y * speed,
+          duration: 1,
+        });
       },
       deep: true,
     },
@@ -55,12 +51,12 @@ export default {
     parallaxScroll(blertapx, chipspx, chipsBagpx, bookpx, paperpx, coffeepx) {
       const scrolled = window.pageYOffset;
       const element = this.$refs.img;
-      const className = element.classList[1];
+      const className = element.classList[0];
 
       const fn = {
         blerta() {
           element.style.top =
-            "calc(" + blertapx + "px - " + scrolled / 3 + "px)";
+            "calc(" + blertapx + "px - " + scrolled / 2 + "px)";
         },
         notebook() {
           element.style.top =
