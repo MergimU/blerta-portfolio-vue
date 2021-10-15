@@ -1,14 +1,6 @@
-.parallax {
-  // position: relative;
-  img {
-    top: 0;
-    right: 0;
-  }
-}
-
-.parallax__background {
-  height: 720px;
-  width: 600px;
+.parallax__container {
+  width: 544px;
+  height: 650px;
 
   z-index: 0;
 
@@ -17,51 +9,74 @@
   right: 0;
 }
 
+.parallax {
+  position: relative;
+  img {
+    top: 0;
+    right: 0;
+  }
+  width: 100%;
+  height: 100%;
+
+  // z-index: 0;
+
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+}
+
+.parallax__background {
+  // height: 720px;
+  // width: 600px;
+  width: 100%;
+  height: 100%;
+}
+
 .blerta {
   position: absolute !important;
-  transform: scale(0.45);
+  transform: scale(0.42);
 
-  top: -160px;
-  right: -210px;
+  top: -205px;
+  right: -250px;
 }
 
 .notebook {
   position: absolute !important;
-  transform: scale(0.33);
+  transform: scale(0.3);
 
-  top: 500px;
-  right: -20px;
+  top: 460px;
+  right: -5px;
 }
 
 .one-paper {
   position: absolute !important;
-  transform: scale(0.43);
+  transform: scale(0.4);
 
-  top: 350px;
-  right: 500px;
+  top: 320px;
+  right: 425px;
 }
 
 .chips-bag {
   position: absolute !important;
-  transform: scale(0.38);
+  transform: scale(0.36);
 
-  top: 200px;
-  right: 380px;
+  top: 155px;
+  right: 330px;
 }
 
 .chips {
   position: absolute !important;
-  transform: scale(0.43);
+  transform: scale(0.4);
 
-  top: 80px;
-  right: 390px;
+  top: 40px;
+  right: 340px;
 }
 
 .coffee {
   position: absolute !important;
-  transform: scale(0.39);
+  transform: scale(0.36);
   z-index: 5;
 
-  top: 320px;
-  right: -20px;
+  top: 275px;
+  right: -30px;
 }
