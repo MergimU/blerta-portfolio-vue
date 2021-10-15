@@ -1,0 +1,42 @@
+.intro {
+  margin-top: 104px;
+  margin-bottom: 48px;
+
+  height: 640px;
+}
+
+.name {
+  margin-bottom: 64px;
+  p {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: $secondary-text;
+    font-size: 20px;
+    &:after {
+      content: "";
+      position: relative;
+      width: 80px;
+      height: 1px;
+      background-color: $secondary-text;
+      left: 24px;
+    }
+  } // p
+}
+
+.description {
+  h1 {
+    font-size: 56px;
+    color: $text;
+    margin-bottom: 30px;
+    line-height: 64px;
+    width: 90%;
+  }
+  p {
+    font-size: 20px;
+    color: $text;
+    line-height: 32px;
+    // width: 70%;
+    max-width: 420px;
+  }
+}

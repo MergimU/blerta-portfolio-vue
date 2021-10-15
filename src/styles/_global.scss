@@ -1,17 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;500;900&display=swap");
 
+//  Animations
+@import "./_animations.scss";
 //  Variables
 @import "./_variables.scss";
 //  Components
 @import "./_container.scss";
+@import "./_case-study.scss";
 @import "./_header.scss";
+@import "./_intro.scss";
+@import "./_work.scss";
 @import "./_parallax.scss";
+
+html {
+  height: 100%;
+  overflow: auto;
+}
+body {
+  height: 100%;
+}
 
 html,
 body,
 * {
   margin: 0;
   padding: 0;
+
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -19,8 +34,12 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  font-family: "Bitter";
+}
+
 a,
+p,
 li {
   font-family: "Inter";
 }

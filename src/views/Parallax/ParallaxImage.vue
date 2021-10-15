@@ -24,18 +24,15 @@ export default {
         const revert = this.$refs.img.getAttribute("revert");
         if (revert) speed *= -1;
 
-        const { x, y } = this.coords;
-
-        // const style = window.getComputedStyle(this.$refs.img);
-        // const transform = style.getPropertyValue("transform");
+        let { x, y } = this.coords;
 
         const scale = (
           this.$refs.img.getBoundingClientRect().width /
           this.$refs.img.offsetWidth
         ).toFixed(2);
 
-        // this.$refs.img.style.right = 1 - x * speed + "px";
-        // this.$refs.img.style.top = 1 - y * speed + "px";
+        console.log("x", x * speed);
+        console.log("y", y * speed);
 
         this.$refs.img.style.transform = `scale(${scale}) translate3d(${
           1 - x * speed
