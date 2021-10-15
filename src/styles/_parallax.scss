@@ -1,0 +1,66 @@
+.parallax {
+  // position: relative;
+  img {
+    top: 0;
+    right: 0;
+  }
+}
+
+.parallax__background {
+  height: 720px;
+  width: 600px;
+
+  z-index: 0;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.blerta {
+  position: absolute !important;
+  transform: scale(0.45);
+
+  top: -160px;
+  right: -210px;
+}
+
+.notebook {
+  position: absolute !important;
+  transform: scale(0.33);
+
+  top: 500px;
+  right: -20px;
+}
+
+.one-paper {
+  position: absolute !important;
+  transform: scale(0.43);
+
+  top: 350px;
+  right: 500px;
+}
+
+.chips-bag {
+  position: absolute !important;
+  transform: scale(0.38);
+
+  top: 200px;
+  right: 380px;
+}
+
+.chips {
+  position: absolute !important;
+  transform: scale(0.43);
+
+  top: 80px;
+  right: 390px;
+}
+
+.coffee {
+  position: absolute !important;
+  transform: scale(0.39);
+
+  top: 320px;
+  right: -20px;
+}

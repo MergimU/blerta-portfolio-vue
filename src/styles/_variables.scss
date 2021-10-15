@@ -1,0 +1,18 @@
+$box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+$border-radius: 8px;
+
+// Colors
+$text: #48465d;
+$orange: #f88d77;
+$secondary-text: #918fa8;
+
+$white: #fff;
+
+.text__orange {
+  color: $orange !important;
+}
+
+.text__bold {
+  font-weight: bold !important;
+}

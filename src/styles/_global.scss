@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;500;900&display=swap");
+
+//  Variables
+@import "./_variables.scss";
+//  Components
+@import "./_container.scss";
+@import "./_header.scss";
+@import "./_parallax.scss";
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li {
+  font-family: "Inter";
+}
+
+a,
+li {
+  // font-family: "Bitter";
+  color: $text;
+}
+
+html {
+  background-color: $white;
+}
