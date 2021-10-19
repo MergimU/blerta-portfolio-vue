@@ -45,7 +45,7 @@ export default {
   },
   methods: {
     parallax() {
-      this.parallaxScroll(-160, 80, 200, 500, 350, 320);
+      this.parallaxScroll(-205, 40, 155, 460, 320, 275);
     },
 
     parallaxScroll(blertapx, chipspx, chipsBagpx, bookpx, paperpx, coffeepx) {
@@ -68,7 +68,7 @@ export default {
         },
         "chips-bag"() {
           element.style.top =
-            "calc(" + chipsBagpx + "px - " + scrolled / 2.5 + "px)";
+            "calc(" + chipsBagpx + "px - " + scrolled / 3 + "px)";
         },
         chips() {
           element.style.top =
@@ -76,7 +76,7 @@ export default {
         },
         coffee() {
           element.style.top =
-            "calc(" + coffeepx + "px - " + scrolled / 1.5 + "px)";
+            "calc(" + coffeepx + "px - " + scrolled / 1.3 + "px)";
         },
       };
 
