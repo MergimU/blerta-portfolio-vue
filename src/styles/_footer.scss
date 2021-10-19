@@ -1,0 +1,80 @@
+#contact.footer {
+  margin-top: 120px;
+}
+
+.footer__message {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  h1 {
+    color: $text;
+    font-size: 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    &:before {
+      content: "";
+      position: relative;
+      width: 80px;
+      height: 1px;
+      left: -24px;
+      background-color: $secondary-text;
+    }
+    &:after {
+      content: "";
+      position: relative;
+      width: 80px;
+      height: 1px;
+      left: 24px;
+      background-color: $secondary-text;
+    }
+  }
+}
+
+.social__medias-all {
+  display: flex;
+  justify-content: center;
+}
+
+.social__media {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #dcdcdc;
+  margin: 0 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: $orange;
+    transition: all 100ms ease-in-out;
+  }
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.footer__drawing {
+  position: relative;
+}
+
+.footer__drawing-laptop {
+  transform: scale(0.5);
+
+  position: absolute;
+  top: -110px;
+  left: -50px;
+}
+
+.footer__drawing-papers {
+  transform: scale(0.5);
+
+  position: absolute;
+  bottom: -240px;
+  left: 200px;
+}

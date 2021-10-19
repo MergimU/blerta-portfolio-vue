@@ -1,6 +1,8 @@
 <template>
   <div class="case__study">
-    <div class="case__study-left" ref="left"></div>
+    <div class="case__study-left" ref="left">
+      <img :src="caseStudy.src" alt="" />
+    </div>
 
     <div class="case__study-right" ref="right">
       <div>
@@ -19,11 +21,6 @@ export default {
   props: {
     caseStudy: Object,
   },
-  data() {
-    return {
-      show: false,
-    };
-  },
   mounted() {
     window.addEventListener("scroll", this.getPosition);
   },
@@ -40,8 +37,6 @@ export default {
     async getPosition() {
       const bool = await this.isElementInViewport();
       if (bool) {
-        this.show = true;
-
         this.$emit("showWork");
 
         this.$refs.left.classList.add("show");

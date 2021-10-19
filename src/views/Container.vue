@@ -9,6 +9,7 @@
       </div>
 
       <Work />
+      <Footer />
     </div>
   </div>
 </template>
@@ -18,6 +19,8 @@ import Header from "@/components/Header.vue";
 import Intro from "./Intro.vue";
 import Parallax from "./Parallax/Parallax.vue";
 import Work from "./Work.vue";
+import Footer from "./Footer.vue";
+
 export default {
   name: "Container",
   components: {
@@ -25,6 +28,7 @@ export default {
     Intro,
     Parallax,
     Work,
+    Footer,
   },
 };
 </script>
