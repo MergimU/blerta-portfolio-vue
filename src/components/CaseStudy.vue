@@ -4,11 +4,17 @@
       <img :src="caseStudy.src" alt="" />
     </div>
 
-    <div class="case__study-right" ref="right">
+    <div
+      class="case__study-right"
+      :style="{ paddingTop: caseStudy.id === 1 ? '40px' : '22px' }"
+      ref="right"
+    >
       <div>
         <h3 class="case__study-name">{{ caseStudy.name }}</h3>
         <p class="case__study-description">{{ caseStudy.description }}</p>
-        <p class="case__study-intro">{{ caseStudy.intro }}</p>
+        <p class="case__study-intro" v-if="caseStudy.intro">
+          {{ caseStudy.intro }}
+        </p>
         <p class="case__study-action">Read Case study</p>
       </div>
     </div>
