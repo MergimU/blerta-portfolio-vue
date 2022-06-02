@@ -30,42 +30,44 @@ export default {
 
       caseStudies: [
         {
-          name: "BAMF Patient and Clinic Portal",
+          name: "ThriveCoin - Core app",
+          id: 1,
           description: "Design lead",
-          intro:
-            "Hi guys and welcome to my youtube channel, today we'll be talking about BAMF and its benefits",
+          route: "",
+          src: require("@/assets/images/work/ThriveCoin.png"),
+        },
+        {
+          name: "BAMF Patient & Clinic Portal",
+          id: 2,
+          description: "Senior UX/UI",
           route: "",
           src: require("@/assets/images/work/BAMF.png"),
         },
         {
           name: "Uniseguros platform",
-          description: "UX / UI Design and Illustrations",
-          intro:
-            "A complex platform that simplified the process of users when applying and managing their insurance.",
+          id: 3,
+          description: "UX/UI Design and Illustrations",
           route: "",
           src: require("@/assets/images/work/UnisegurosPlatform.png"),
         },
         {
           name: "Uniseguros website",
-          description: "UX / UI Design and Illustrations",
-          intro:
-            "A complex platform that simplified the process of users when applying and managing their insurance.",
+          id: 4,
+          description: "UX/UI Design and Illustrations",
           route: "",
           src: require("@/assets/images/work/UnisegurosWebsite.png"),
         },
         {
           name: "Balkan Cuisine",
-          description: "UI Design and Illustrations",
-          intro:
-            "A complex platform that simplified the process of users when applying and managing their insurance.",
+          id: 5,
+          description: "UX/UI Designer and Illustrator",
           route: "",
           src: require("@/assets/images/work/BalkanCuisine.png"),
         },
         {
           name: "Friendict",
-          description: "UI Design and Illustrations",
-          intro:
-            "A mobile app for predicting soccer game results against friends and strangers using the platform's coin system.",
+          id: 6,
+          description: "UX/UI Designer and Illustrator",
           route: "",
           src: require("@/assets/images/work/Friendict.png"),
         },
