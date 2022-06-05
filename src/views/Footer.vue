@@ -1,5 +1,5 @@
 <template>
-  <div class="footer" id="contact">
+  <div class="footer ref-contact" id="contact">
     <div class="footer__message">
       <h1>Get in touch</h1>
     </div>
