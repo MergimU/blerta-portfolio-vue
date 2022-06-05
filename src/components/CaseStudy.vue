@@ -1,7 +1,12 @@
 <template>
   <div class="case__study">
     <div class="case__study-left" ref="left">
-      <img :src="caseStudy.src" alt="" />
+      <img
+        :src="caseStudy.src"
+        alt=""
+        @click="handleRouteChange(caseStudy)"
+        style="cursor: pointer"
+      />
     </div>
 
     <div
@@ -15,7 +20,9 @@
         <p class="case__study-intro" v-if="caseStudy.intro">
           {{ caseStudy.intro }}
         </p>
-        <p class="case__study-action">Read Case study</p>
+        <p @click="handleRouteChange(caseStudy)" class="case__study-action">
+          Read Case study
+        </p>
       </div>
     </div>
   </div>
@@ -31,10 +38,14 @@ export default {
     window.addEventListener("scroll", this.getPosition);
   },
   methods: {
+    handleRouteChange(caseStudy) {
+      this.$router.push({ name: caseStudy.route, params: { caseStudy } });
+    },
     isElementInViewport() {
       return new Promise((resolve) => {
         const o = new IntersectionObserver(([entry]) => {
           resolve(entry.intersectionRatio === 1);
+          // Show case studies earlier
           o.disconnect();
         });
         o.observe(this.$el);

@@ -1,5 +1,5 @@
 <template>
-  <div class="intro" id="about">
+  <div class="intro ref-about" id="about">
     <div class="name">
       <p>Blerta Beselica</p>
     </div>
