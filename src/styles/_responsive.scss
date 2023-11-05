@@ -54,6 +54,13 @@
     margin-left: 32px !important;
     width: 35% !important;
   }
+  // Absolute positioned elements in footer: 
+  .footer__drawing-laptop {
+    top: -60px !important;
+  }
+  .footer__drawing-papers {
+    top: 200px !important;
+  }
 }
 
 // Large (LG)
