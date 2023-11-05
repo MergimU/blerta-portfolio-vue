@@ -1,6 +1,22 @@
 
 // Small (SM) (Phones)
 @media (max-width: 768px) {
+  // Parallax:
+  .parallax__container {
+    position: relative !important;
+    width: 100% !important;
+    height: calc(100vh - 135px) !important;
+  }
+  .intro__section {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  // Intro
+  .description h1 {
+    width: 100% !important;
+  }
+
+  // 
   .case__study {
     display: block !important;
   }
