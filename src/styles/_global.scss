@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;500;900&display=swap");
 
-//  Responsive
-@import "./_responsive.scss";
 //  Animations
 @import "./_animations.scss";
 //  Variables
@@ -14,6 +12,8 @@
 @import "./_work.scss";
 @import "./_parallax.scss";
 @import "./_footer.scss";
+//  Responsive
+@import "./_responsive.scss";
 
 html {
   height: 100%;
