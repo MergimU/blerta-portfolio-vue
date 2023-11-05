@@ -1,0 +1,63 @@
+
+// Small (SM) (Phones)
+@media (max-width: 768px) {
+  .case__study {
+    display: block !important;
+  }
+  .case__study-left {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .case__study-right {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  .footer__message {
+    margin-bottom: 30px !important;
+
+    h1 {
+      font-size: 22px !important;
+    }
+  }
+  .social__medias-all {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    row-gap: 15px !important;
+    width: 80% !important;
+    margin: auto !important;
+  }
+  #contact.footer {
+    margin-top: 30px !important;
+  }
+
+  // Absolute positioned elements in footer: 
+  .footer__drawing-laptop {
+    top: -60px !important;
+    left: unset !important;
+    right: -20px !important;
+  }
+  .footer__drawing-papers {
+    right: unset !important;
+    left: 100px !important;
+    top: 200px !important;
+  }
+}
+
+// Medium (MD) (Tablets)
+@media (min-width: 769px) and (max-width: 992px) {
+  .case__study-left {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .case__study-right {
+    margin-left: 32px !important;
+    width: 35% !important;
+  }
+}
+
+// Large (LG)
+@media (min-width: 992px) {
+  // Your CSS rules for extra large screens here
+}
+
