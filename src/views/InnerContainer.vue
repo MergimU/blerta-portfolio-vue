@@ -1,6 +1,6 @@
 <template>
   <div class="inner__container">
-    <div>
+    <div class="intro__section">
       <Intro />
       <Parallax />
     </div>
