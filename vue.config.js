@@ -6,5 +6,5 @@ module.exports = {
       },
     },
   },
-  publicPath: "/blerta-portfolio-vue/"
+  publicPath: process.env.NODE_ENV === "production" ? "/blerta-portfolio-vue/" : "/",
 };
