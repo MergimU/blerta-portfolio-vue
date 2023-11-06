@@ -30,11 +30,11 @@ export default {
 
       caseStudies: [
         {
-          name: "ThriveCoin - Core & Activity app",
+          name: "Thrive - Core & Activity app",
           id: 1,
           description: "Design lead",
-          route: "thrivecoin",
-          src: require("@/assets/images/work/ThriveCoin.png"),
+          route: "thrive",
+          src: require("@/assets/images/work/Thrive.png"),
         },
         {
           name: "BAMF Clinic Portal",

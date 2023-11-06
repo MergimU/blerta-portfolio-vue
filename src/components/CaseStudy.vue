@@ -34,8 +34,12 @@ export default {
   props: {
     caseStudy: Object,
   },
-  mounted() {
+  async mounted() {
     window.addEventListener("scroll", this.getPosition);
+    this.getPosition();
+  },
+  unmounted() {
+    window.removeEventListener("scroll", this.getPosition);
   },
   methods: {
     handleRouteChange(caseStudy) {

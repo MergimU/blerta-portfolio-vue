@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 
 import InnerContainer from "@/views/InnerContainer";
 
-import Thrivecoin from "../views/caseStudies/Thrivecoin";
+import Thrive from "../views/caseStudies/Thrive";
 import BAMFClinicPortal from "../views/caseStudies/BAMFClinicPortal";
 import BAMFPatientPortal from "../views/caseStudies/BAMFPatientPortal";
 import UnisegurosPlatform from "../views/caseStudies/UnisegurosPlatform";
@@ -18,9 +18,9 @@ const routes = [
     component: InnerContainer,
   },
   {
-    path: "/case-studies/thrivecoin",
-    name: "thrivecoin",
-    component: Thrivecoin,
+    path: "/case-studies/thrive",
+    name: "thrive",
+    component: Thrive,
   },
   {
     path: "/case-studies/bamf-patient",

@@ -8,10 +8,16 @@
     height: calc(100vh - 135px) !important;
   }
   .intro__section {
-    display: flex !important;
     flex-direction: column-reverse !important;
+    justify-content: unset !important;
+    height: unset !important;
+    margin: unset !important;
+    width: unset !important;
   }
   // Intro
+  .intro {
+    margin-bottom: 0px !important;
+  }  
   .description h1 {
     width: 100% !important;
   }

@@ -20,6 +20,9 @@ export default {
   mounted() {
     window.addEventListener("scroll", this.getPosition);
   },
+  unmounted() {
+    window.removeEventListener("scroll", this.getPosition);
+  },
   methods: {
     showSocialMedia() {
       setTimeout(() => {

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" :style="`padding-bottom: ${getRoute === 'home' ? '320px' : 'none'}`">
     <Header />
 
     <router-view></router-view>
@@ -14,5 +14,10 @@ export default {
   components: {
     Header,
   },
+  computed: {
+    getRoute() {
+      return this.$route.name
+    }
+  }
 };
 </script>
