@@ -150,11 +150,13 @@
     <div class="work-sixth__image work-image mt-4 mb-4">
       <figure>
         <img :src="sixthImage" />
-        <figcaption class="mt-2">Designs from the Core and Activity App</figcaption>
+        <figcaption class="mt-2">
+          Designs from the Core and Activity App
+        </figcaption>
       </figure>
     </div>
 
-    <br><br>
+    <br /><br />
   </div>
 </template>
 

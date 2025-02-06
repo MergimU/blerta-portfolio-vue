@@ -5,7 +5,9 @@
     </div>
     <div class="work-list__items">
       <ul>
-        <li class="mb-1" v-for="(item, index) of list" :key="index">{{ item }}</li>
+        <li class="mb-1"
+            v-for="(item, index) of list"
+            :key="index">{{ item }}</li>
       </ul>
     </div>
   </div>
@@ -13,7 +15,7 @@
 
 <script>
 export default {
-  name: 'WorkList',
+  name: "WorkList",
   props: ["title", "list"],
 }
 </script>
