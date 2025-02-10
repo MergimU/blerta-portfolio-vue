@@ -15,6 +15,11 @@
       ref="right"
     >
       <div>
+        <TitleTag
+          :title="caseStudy.titleTag"
+          :color="caseStudy.titleTagColor"
+          lineSize="small"
+        />
         <h3 class="case__study-name">{{ caseStudy.name }}</h3>
         <p class="case__study-description">{{ caseStudy.description }}</p>
         <p class="case__study-intro" v-if="caseStudy.intro">
@@ -29,10 +34,15 @@
 </template>
 
 <script>
+import TitleTag from "@/components/ui/TitleTag.vue";
+
 export default {
   name: "CaseStudy",
   props: {
     caseStudy: Object,
+  },
+  components: {
+    TitleTag,
   },
   async mounted() {
     window.addEventListener("scroll", this.getPosition);

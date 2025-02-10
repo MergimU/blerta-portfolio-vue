@@ -5,6 +5,7 @@
 //  Variables
 @import "./_variables.scss";
 //  Components
+@import "./components/index";
 @import "./_container.scss";
 @import "./_case-study.scss";
 @import "./_header.scss";
@@ -12,6 +13,7 @@
 @import "./_work.scss";
 @import "./_parallax.scss";
 @import "./_footer.scss";
+
 //  Responsive
 @import "./_responsive.scss";
 
@@ -28,6 +30,7 @@ body,
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 
   scroll-behavior: smooth;
 }

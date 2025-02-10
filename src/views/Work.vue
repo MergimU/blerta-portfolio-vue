@@ -30,6 +30,8 @@ export default {
 
       caseStudies: [
         {
+          titleTag: "DESKTOP",
+          titleTagColor: "#66ABF7",
           name: "Thrive - Core & Activity app",
           id: 1,
           description: "Design lead",
@@ -37,6 +39,8 @@ export default {
           src: require("@/assets/images/work/Thrive.png"),
         },
         {
+          titleTag: "DESKTOP",
+          titleTagColor: "#66ABF7",
           name: "BAMF Clinic Portal",
           id: 2,
           description: "Senior UX/UI",
@@ -44,6 +48,8 @@ export default {
           src: require("@/assets/images/work/BAMF.png"),
         },
         {
+          titleTag: "DESKTOP",
+          titleTagColor: "#66ABF7",
           name: "BAMF Patient Portal",
           id: 3,
           description: "Senior UX/UI",
@@ -51,6 +57,8 @@ export default {
           src: require("@/assets/images/work/BAMF.png"),
         },
         {
+          titleTag: "DESKTOP",
+          titleTagColor: "#66ABF7",
           name: "Uniseguros platform",
           id: 4,
           description: "UX/UI Design and Illustrations",
@@ -58,6 +66,8 @@ export default {
           src: require("@/assets/images/work/UnisegurosPlatform.png"),
         },
         {
+          titleTag: "DESKTOP",
+          titleTagColor: "#66ABF7",
           name: "Uniseguros website",
           id: 5,
           description: "UX/UI Design and Illustrations",
@@ -65,6 +75,8 @@ export default {
           src: require("@/assets/images/work/UnisegurosWebsite.png"),
         },
         {
+          titleTag: "DESKTOP",
+          titleTagColor: "#66ABF7",
           name: "Balkan Cuisine",
           id: 6,
           description: "UX/UI Designer and Illustrator",
@@ -72,6 +84,8 @@ export default {
           src: require("@/assets/images/work/BalkanCuisine.png"),
         },
         {
+          titleTag: "DESKTOP",
+          titleTagColor: "#66ABF7",
           name: "Express",
           id: 7,
           description: "UX/UI Designer",
@@ -79,6 +93,8 @@ export default {
           src: require("@/assets/images/work/BalkanCuisine.png"),
         },
         {
+          titleTag: "DESKTOP",
+          titleTagColor: "#66ABF7",
           name: "Friendict",
           id: 8,
           description: "UX/UI Designer and Illustrator",

@@ -1,33 +1,30 @@
 .intro {
-  margin-bottom: 90px;
-
-  
-}
-
-.intro {
   margin-top: 104px;
   margin-bottom: 48px;
 
   height: 640px;
-}
 
-.intro__section {
-  height: 700px;
-  margin: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  &__section {
+    height: 700px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .name {
-  margin-bottom: 64px;
+  margin-bottom: 48px;
+
   p {
     position: relative;
     display: flex;
     align-items: center;
     color: $secondary-text;
-    font-size: 24px;
+    font-size: 16px;
+    line-height: 24px;
+
     &:after {
       content: "";
       position: relative;
@@ -36,22 +33,21 @@
       background-color: $secondary-text;
       left: 24px;
     }
-  } // p
+  }
 }
 
 .description {
   h1 {
-    font-size: 56px;
+    font-size: 46px;
     color: $text;
     margin-bottom: 30px;
     line-height: 64px;
     width: 90%;
   }
   p {
-    font-size: 20px;
     color: $text;
-    line-height: 32px;
-    // width: 70%;
+    font-size: 16px;
+    line-height: 24px;
     max-width: 420px;
   }
 }

@@ -1,4 +1,3 @@
-
 // Small (SM) (Phones)
 @media (max-width: 768px) {
   // Parallax:
@@ -17,22 +16,23 @@
   // Intro
   .intro {
     margin-bottom: 0px !important;
-  }  
+  }
   .description h1 {
     width: 100% !important;
   }
-  // 
+  //
   .case__study {
     display: block !important;
   }
-  .case__study-left {
-    width: 100% !important;
-    height: 100% !important;
-  }
-  .case__study-right {
-    margin-left: 0 !important;
-    width: 100% !important;
-  }
+  // .case__study-left {
+  //   width: 100% !important;
+  //   height: 100% !important;
+  // }
+  // .case__study-right {
+  //   margin-left: 0 !important;
+  //   width: 100% !important;
+  // }
+
   .footer__message {
     margin-bottom: 30px !important;
 
@@ -52,7 +52,7 @@
     margin-top: 30px !important;
   }
 
-  // Absolute positioned elements in footer: 
+  // Absolute positioned elements in footer:
   .footer__drawing-laptop {
     top: -60px !important;
     left: unset !important;
@@ -71,11 +71,11 @@
     width: 100% !important;
     height: 100% !important;
   }
-  .case__study-right {
-    margin-left: 32px !important;
-    width: 35% !important;
-  }
-  // Absolute positioned elements in footer: 
+  // .case__study-right {
+  //   margin-left: 32px !important;
+  //   width: 35% !important;
+  // }
+  // Absolute positioned elements in footer:
   .footer__drawing-laptop {
     top: -60px !important;
   }
@@ -88,4 +88,3 @@
 @media (min-width: 992px) {
   // Your CSS rules for extra large screens here
 }
-

@@ -1,8 +1,6 @@
 <template>
   <div class="intro ref-about" id="about">
-    <div class="name">
-      <p>Blerta Beselica</p>
-    </div>
+    <TitleTag title="Blerta Beselica" />
     <div class="description">
       <h1>
         Product Designer <br />
@@ -18,7 +16,11 @@
 </template>
 
 <script>
+import TitleTag from "../components/ui/TitleTag.vue";
 export default {
   name: "Intro",
+  components: {
+    TitleTag,
+  },
 };
 </script>
