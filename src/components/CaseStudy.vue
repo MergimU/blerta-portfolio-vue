@@ -21,6 +21,7 @@
           lineSize="small"
         />
         <h3 class="case__study-name">{{ caseStudy.name }}</h3>
+        <p class="case__study__work-title">{{ caseStudy.workInfo }}</p>
         <p class="case__study-description">{{ caseStudy.description }}</p>
         <p class="case__study-intro" v-if="caseStudy.intro">
           {{ caseStudy.intro }}

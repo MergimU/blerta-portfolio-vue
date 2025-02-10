@@ -1,8 +1,12 @@
 .intro {
   margin-top: 104px;
   margin-bottom: 48px;
-
   height: 640px;
+  z-index: 1;
+
+  @include desktop {
+    backdrop-filter: blur(3px);
+  }
 
   &__section {
     height: 700px;
@@ -42,12 +46,21 @@
     color: $text;
     margin-bottom: 30px;
     line-height: 64px;
-    width: 90%;
+
+    @include desktop {
+      font-size: 36px;
+      line-height: 54px;
+    }
   }
   p {
     color: $text;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 34px;
     max-width: 420px;
+
+    @include desktop {
+      font-size: 26px;
+      line-height: 34px;
+    }
   }
 }

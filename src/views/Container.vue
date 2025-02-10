@@ -1,23 +1,26 @@
 <template>
-  <div class="container" :style="`padding-bottom: ${getRoute === 'home' ? '320px' : 'none'}`">
-    <Header />
+  <div
+    class="container"
+    :style="`padding-bottom: ${getRoute === 'home' ? '320px' : 'none'}`"
+  >
+    <Navigation />
 
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
+import Navigation from "@/components/Navigation.vue";
 
 export default {
   name: "Container",
   components: {
-    Header,
+    Navigation,
   },
   computed: {
     getRoute() {
-      return this.$route.name
-    }
-  }
+      return this.$route.name;
+    },
+  },
 };
 </script>

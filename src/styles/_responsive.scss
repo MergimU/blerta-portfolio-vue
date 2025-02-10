@@ -1,11 +1,41 @@
+@mixin mobile {
+  @media only screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin extra-large-desktop {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
 // Small (SM) (Phones)
 @media (max-width: 768px) {
   // Parallax:
-  .parallax__container {
-    position: relative !important;
-    width: 100% !important;
-    height: calc(100vh - 135px) !important;
-  }
+  // .parallax__container {
+  //   position: relative !important;
+  //   width: 100% !important;
+  //   height: calc(100vh - 135px) !important;
+  // }
   .intro__section {
     flex-direction: column-reverse !important;
     justify-content: unset !important;
@@ -20,18 +50,9 @@
   .description h1 {
     width: 100% !important;
   }
-  //
   .case__study {
     display: block !important;
   }
-  // .case__study-left {
-  //   width: 100% !important;
-  //   height: 100% !important;
-  // }
-  // .case__study-right {
-  //   margin-left: 0 !important;
-  //   width: 100% !important;
-  // }
 
   .footer__message {
     margin-bottom: 30px !important;
@@ -71,10 +92,6 @@
     width: 100% !important;
     height: 100% !important;
   }
-  // .case__study-right {
-  //   margin-left: 32px !important;
-  //   width: 35% !important;
-  // }
   // Absolute positioned elements in footer:
   .footer__drawing-laptop {
     top: -60px !important;
@@ -82,9 +99,4 @@
   .footer__drawing-papers {
     top: 200px !important;
   }
-}
-
-// Large (LG)
-@media (min-width: 992px) {
-  // Your CSS rules for extra large screens here
 }
