@@ -1,5 +1,5 @@
 <template>
-  <div class="inner__container">
+  <div class="container__inner">
     <div class="intro__section">
       <Intro />
       <Parallax />

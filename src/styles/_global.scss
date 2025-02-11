@@ -5,15 +5,17 @@
 //  Variables
 @import "./_variables.scss";
 //  Components
+@import "./_responsive.scss";
+@import "./components/index";
 @import "./_container.scss";
 @import "./_case-study.scss";
-@import "./_header.scss";
+@import "./_navigation.scss";
 @import "./_intro.scss";
 @import "./_work.scss";
 @import "./_parallax.scss";
 @import "./_footer.scss";
+
 //  Responsive
-@import "./_responsive.scss";
 
 html {
   height: 100%;
@@ -28,7 +30,7 @@ body,
 * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -51,8 +53,11 @@ li {
 
 a,
 li {
-  // font-family: "Bitter";
   color: $text;
+}
+
+li {
+  list-style-type: none;
 }
 
 html {

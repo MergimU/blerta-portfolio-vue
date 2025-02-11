@@ -1,16 +1,15 @@
 <template>
-  <ul class="header__nav">
-    <li class="header__title" v-for="(link, idx) of links" :key="idx">
-      <a
-        class="header__link"
-        href="javascript:void(0)"
-        @click="handleScrollToSection(link.route)"
-        :class="{ 'text__orange text__bold': link.orange }"
-      >
-        {{ link.name }}
-      </a>
-    </li>
-  </ul>
+  <nav class="nav">
+    <a
+      v-for="(link, idx) of links"
+      :key="idx"
+      class="nav__link"
+      @click="handleScrollToSection(link.route)"
+      :class="{ 'text__orange text__bold': link.orange }"
+    >
+      {{ link.name }}
+    </a>
+  </nav>
 </template>
 
 <script>
