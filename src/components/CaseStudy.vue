@@ -45,39 +45,52 @@ export default {
   components: {
     TitleTag,
   },
-  async mounted() {
-    window.addEventListener("scroll", this.getPosition);
-    this.getPosition();
+  data() {
+    return {
+      observer: null,
+    };
   },
-  unmounted() {
-    window.removeEventListener("scroll", this.getPosition);
+  mounted() {
+    this.setupObserver();
+  },
+  beforeUnmount() {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
   },
   methods: {
     handleRouteChange(caseStudy) {
       this.$router.push({ name: caseStudy.route, params: { caseStudy } });
     },
-    isElementInViewport() {
-      return new Promise((resolve) => {
-        const o = new IntersectionObserver(([entry]) => {
-          resolve(entry.intersectionRatio === 1);
-          // Show case studies earlier
-          o.disconnect();
-        });
-        o.observe(this.$el);
-      });
-    },
-    async getPosition() {
-      const bool = await this.isElementInViewport();
-      if (bool) {
-        this.$emit("showWork");
+    setupObserver() {
+      const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.4,
+      };
 
+      this.observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            this.handleIntersection(entry.target);
+          }
+        });
+      }, options);
+
+      this.observer.observe(this.$refs.left);
+      this.observer.observe(this.$refs.right);
+    },
+    handleIntersection(target) {
+      if (target === this.$refs.left) {
         this.$refs.left.classList.add("show");
+        this.$emit("showWork");
+      } else if (target === this.$refs.right) {
         setTimeout(() => {
           this.$refs.right.classList.add("show");
         }, 100);
-
-        window.removeEventListener("scroll", this.getPosition);
       }
+
+      this.observer.unobserve(target);
     },
   },
 };
