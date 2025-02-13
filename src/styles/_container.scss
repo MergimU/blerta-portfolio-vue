@@ -1,12 +1,10 @@
 .container {
-  width: calc(100% - 64px);
-  width: 100%;
   max-width: 1440px;
   margin: 32px auto;
+  padding: 0 32px;
   position: relative;
 
   &__inner {
-    width: 90%;
     margin: auto;
   }
 }
