@@ -53,24 +53,28 @@
     <div class="work-paragraph">
       <div class="mt-5 work-web3">
         <h2 class="work-title__smaller mb-3">
-          Web3 and the entry level barrier
+          Blockchain and the entry level barrier
         </h2>
         <p>
-          Thrive’s aim was to appeal to a larger audience than just the people
-          inside the blockchain community. We wanted to expand beyond that, but
-          with an industry so early in its beginnings, many people still
-          struggled with blockchain jargon, creating mental patterns around the
-          concept and even figuring out how to manage/create their wallets.
+          Thrive's aim was to appeal to a larger audience than just the people
+          inside the blockchain community. <br />
+          We wanted to expand beyond that, but with an industry just starting to
+          grab the attention of larger audiences, many people still struggled
+          with blockchain jargon, creating mental patterns around the concept
+          and even figuring out how to manage/create their wallets. <br />
           These issues became main pain points that we had to design/think about
-          when we started building the product. <br />
-          <br />So as to not overwhelm users as soon as they entered the site,
-          we decided we wanted them to engage with our content first while
-          asking very little commitment in the beggining.<br />
-          <br />
+          when we started building the product. <br /><br />
+
+          So as to not overwhelm users as soon as they entered the site, we
+          decided we wanted them to engage and explore our content first while
+          asking very little commitment in the beginning.<br /><br />
+
           We allowed users to browse through listings, and groups without an
-          account, and only after the user would want to Contribute/Complete a
-          listing, would we ask for sign up details, or if they had previously
-          done so, they would only have to add the wallet information.
+          account, and only after the user would want to interact in depth and
+          felt comfortable, would we ask for sign up details, or if they had
+          previously done so, they would only have to add the wallet information
+          so that we wouldn't overwhelm them with multiple requirements right at
+          the start.
         </p>
       </div>
     </div>
@@ -113,18 +117,19 @@
       <div class="mt-5 work-web3">
         <h2 class="work-title__smaller mb-3">Activity app</h2>
         <p>
-          Another important design challenge we faced was the Activity App.
-          <br /><strong>A little background:</strong>
-          The activity app’s technically a seperate app where transactions and
+          Another important design challenge we faced was the Activity App. The
+          activity app was technically a separate app where transactions and
           payments were processed and all the details of a group or listing
-          lived in. This infrastructure allowed enough flexibility for users to
-          create other activity apps down the road, with unique needs and
-          challenges that would further grow the ecosystem.
+          lived in.<br />
+          This infrastructure allowed enough flexibility for users to create
+          their own activity apps down the road, with unique needs and
+          challenges that would further grow the ecosystem. So while the Core
+          app provided the pillars for transactions, the actual groups and
+          activities were created in individual Activity apps.
         </p>
 
-        <div class="work-table mt-3 mb-3">
+        <div class="work__table-list work-table mt-3 mb-3">
           <WorkList title="Core app" :list="coreApp" />
-
           <WorkList title="Activity app" :list="activityApp" />
         </div>
 

@@ -17,7 +17,15 @@
     }
 
     @include mobile {
-      padding: 16px 14px;
+      padding: 16px 10px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
     }
   }
 }

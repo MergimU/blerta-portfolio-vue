@@ -6,6 +6,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 100px;
 
+  @include desktop {
+    gap: 50px;
+  }
+
   &:nth-child(even) {
     flex-direction: row-reverse;
     grid-auto-flow: dense;
@@ -91,6 +95,7 @@
     color: $text;
     font-size: 20px;
     line-height: 34px;
+    // white-space: pre-line;
 
     @include desktop {
       font-size: 16px;

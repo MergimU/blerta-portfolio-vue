@@ -1,12 +1,7 @@
 <template>
   <div class="case__study">
     <div class="case__study-left" ref="left">
-      <img
-        :src="caseStudy.src"
-        alt=""
-        @click="handleRouteChange(caseStudy)"
-        style="cursor: pointer"
-      />
+      <img :src="caseStudy.src" :alt="caseStudy.name" />
     </div>
 
     <div
