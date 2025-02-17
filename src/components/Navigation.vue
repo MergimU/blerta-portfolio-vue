@@ -40,9 +40,9 @@ export default {
   },
 
   methods: {
-    async handleScrollToSection(section) {
+    handleScrollToSection(section) {
       if (this.$route.path !== "/") {
-        await this.$router.push({ name: "home" });
+        this.$router.push({ name: "home" });
       }
 
       const s = document.querySelector(`.ref-${section}`);

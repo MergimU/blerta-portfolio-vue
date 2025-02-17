@@ -1,0 +1,50 @@
+.about-me {
+  margin-bottom: 124px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  padding-top: 30px;
+
+  @include desktop {
+    gap: 30px;
+    padding-top: 0;
+  }
+
+  @include tablet {
+    display: block;
+  }
+
+  > div {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+
+  &__right {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: 46px;
+    color: $text;
+    margin-bottom: 30px;
+    line-height: 64px;
+
+    @include desktop {
+      font-size: 36px;
+      line-height: 54px;
+    }
+  }
+
+  &__description {
+    color: $text;
+    font-size: 20px;
+    line-height: 34px;
+    max-width: 420px;
+  }
+
+  &__image {
+    width: 80%;
+  }
+}

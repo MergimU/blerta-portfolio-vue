@@ -12,16 +12,16 @@
     padding: 16px 24px;
     transition: all 300ms ease-in-out;
 
+    &:first-child {
+      padding-left: 0;
+    }
+
     &:hover {
       color: $orange;
     }
 
     @include mobile {
       padding: 16px 10px;
-
-      &:first-child {
-        padding-left: 0;
-      }
 
       &:last-child {
         padding-right: 0;
