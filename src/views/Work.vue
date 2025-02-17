@@ -11,7 +11,6 @@
         v-for="(study, index) in caseStudies"
         :key="index"
         :caseStudy="study"
-        @showWork="show = true"
       />
     </div>
   </div>

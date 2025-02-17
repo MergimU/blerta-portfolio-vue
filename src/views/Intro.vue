@@ -1,5 +1,5 @@
 <template>
-  <div class="intro ref-about" id="about">
+  <div class="intro">
     <TitleTag title="Blerta Beselica" />
     <div class="description">
       <h1>

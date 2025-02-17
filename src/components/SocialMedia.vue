@@ -14,38 +14,32 @@ export default {
   },
   data() {
     return {
-      count: 0,
+      observer: null,
     };
   },
   mounted() {
-    window.addEventListener("scroll", this.getPosition);
+    this.observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          this.showSocialMedia();
+          this.observer.disconnect();
+        }
+      },
+      { threshold: 1 }
+    );
+
+    this.observer.observe(this.$el);
   },
-  unmounted() {
-    window.removeEventListener("scroll", this.getPosition);
+  beforeUnmount() {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
   },
   methods: {
     showSocialMedia() {
       setTimeout(() => {
         this.$el.classList.add("show");
       }, this.socialMedia.idx * 100);
-    },
-
-    isElementInViewport() {
-      return new Promise((resolve) => {
-        const o = new IntersectionObserver(([entry]) => {
-          resolve(entry.intersectionRatio === 1);
-          o.disconnect();
-        });
-        o.observe(this.$el);
-      });
-    },
-    async getPosition() {
-      const bool = await this.isElementInViewport();
-      if (bool) {
-        this.showSocialMedia();
-
-        window.removeEventListener("scroll", this.getPosition);
-      }
     },
   },
 };

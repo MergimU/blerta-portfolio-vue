@@ -4,8 +4,8 @@
       <Intro />
       <Parallax />
     </div>
-
     <Work />
+    <AboutMe />
     <Footer />
   </div>
 </template>
@@ -15,6 +15,7 @@ import Intro from "./Intro.vue";
 import Parallax from "./Parallax/Parallax.vue";
 import Work from "./Work.vue";
 import Footer from "./Footer.vue";
+import AboutMe from "./AboutMe.vue";
 
 export default {
   name: "InnerContainer",
@@ -22,6 +23,7 @@ export default {
     Intro,
     Parallax,
     Work,
+    AboutMe,
     Footer,
   },
 };

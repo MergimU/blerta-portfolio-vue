@@ -1,6 +1,4 @@
 .case__study {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 124px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -11,7 +9,6 @@
   }
 
   &:nth-child(even) {
-    flex-direction: row-reverse;
     grid-auto-flow: dense;
 
     .case__study-left {
