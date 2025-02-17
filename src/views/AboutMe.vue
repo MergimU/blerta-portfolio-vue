@@ -64,7 +64,6 @@ export default {
     handleIntersection(target) {
       if (target === this.$refs.left) {
         this.$refs.left.classList.add("show");
-        this.$emit("showWork");
       } else if (target === this.$refs.right) {
         setTimeout(() => {
           this.$refs.right.classList.add("show");

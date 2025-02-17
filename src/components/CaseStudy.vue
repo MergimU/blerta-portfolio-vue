@@ -31,6 +31,7 @@
 
 <script>
 import TitleTag from "@/components/ui/TitleTag.vue";
+import { useIntersectionObserver } from "@/composables/useIntersectionObserver";
 
 export default {
   name: "CaseStudy",
@@ -40,52 +41,20 @@ export default {
   components: {
     TitleTag,
   },
-  data() {
+  setup() {
+    const { observeElement } = useIntersectionObserver();
+
     return {
-      observer: null,
+      observeElement,
     };
   },
   mounted() {
-    this.setupObserver();
-  },
-  beforeUnmount() {
-    if (this.observer) {
-      this.observer.disconnect();
-    }
+    this.observeElement(this.$refs.left, "left");
+    this.observeElement(this.$refs.right, "right");
   },
   methods: {
     handleRouteChange(caseStudy) {
       this.$router.push({ name: caseStudy.route, params: { caseStudy } });
-    },
-    setupObserver() {
-      const options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.4,
-      };
-
-      this.observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            this.handleIntersection(entry.target);
-          }
-        });
-      }, options);
-
-      this.observer.observe(this.$refs.left);
-      this.observer.observe(this.$refs.right);
-    },
-    handleIntersection(target) {
-      if (target === this.$refs.left) {
-        this.$refs.left.classList.add("show");
-        this.$emit("showWork");
-      } else if (target === this.$refs.right) {
-        setTimeout(() => {
-          this.$refs.right.classList.add("show");
-        }, 100);
-      }
-
-      this.observer.unobserve(target);
     },
   },
 };
