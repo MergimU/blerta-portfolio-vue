@@ -1,12 +1,10 @@
 <template>
-  <div class="work ref-work">
+  <div class="case-studies ref-work">
     <transition name="fade">
-      <div id="work" class="work__title" v-if="show">
-        <h1>Work</h1>
-      </div>
+      <h1 id="work" class="case-studies__title" ref="left">Work</h1>
     </transition>
 
-    <div class="case__studies-section">
+    <div class="case-studies__cases">
       <CaseStudy
         v-for="(study, index) in caseStudies"
         :key="index"
@@ -18,10 +16,22 @@
 
 <script>
 import CaseStudy from "@/components/CaseStudy.vue";
+import { useIntersectionObserver } from "@/composables/useIntersectionObserver";
+
 export default {
   name: "Work",
   components: {
     CaseStudy,
+  },
+  setup() {
+    const { observeElement } = useIntersectionObserver();
+
+    return {
+      observeElement,
+    };
+  },
+  mounted() {
+    this.observeElement(this.$refs.left, "left");
   },
   data() {
     return {
@@ -106,7 +116,7 @@ export default {
           workInfo: "UX/UI Designer and Illustrator · 2017",
           name: "Balkan Cuisine",
           description:
-            "Balkan Cuisine is a curation of Balkan's finest dishes. It was an early personal, side project that’s close to my heart ❤️.",
+            "Balkan Cuisine is a curation of Balkan's finest dishes. It was an early personal, side project that's close to my heart ❤️.",
           route: "balkan-cuisine",
           src: require("@/assets/images/work-images/balkan-cousine.webp"),
         },

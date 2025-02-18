@@ -1,9 +1,20 @@
 .work {
+  padding-top: 104px;
+
   &__table-list {
     background-color: #fbfafa;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 28px 40px;
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      margin-bottom: 20px;
+    }
 
     li {
       list-style-type: disc;
@@ -13,41 +24,67 @@
   &__title {
     margin-bottom: 72px;
     position: relative;
+    // opacity: 0;
+    // transform: translateY(50px);
+
+    // h1 {
+    //   display: flex;
+    //   align-items: center;
+    //   font-weight: bold;
+    //   font-size: 32px;
+    //   color: $text;
+
+    //   @include tablet {
+    //     font-size: 24px;
+    //   }
+
+    //   // &:after {
+    //   //   content: "";
+    //   //   position: relative;
+    //   //   width: 80px;
+    //   //   height: 1px;
+    //   //   background-color: $secondary-text;
+    //   //   left: 24px;
+    //   // }
+    // }
+  }
+
+  &__paragraph {
+    width: 70%;
+    margin: auto;
+
+    @include desktop {
+      width: 90%;
+    }
+
+    p {
+      width: 80%;
+      font-size: 18px;
+      color: $text;
+      line-height: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 64px;
 
     h1 {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-      font-size: 32px;
-      color: $text;
+      font-size: 46px;
+      line-height: 55px;
 
-      &:after {
-        content: "";
-        position: relative;
-        width: 80px;
-        height: 1px;
-        background-color: $secondary-text;
-        left: 24px;
+      @include tablet {
+        font-size: 34px;
       }
     }
   }
 }
 
-.work-intro {
-  width: 100%;
-  height: 100% !important;
-}
-
-.work-title {
-  margin-bottom: 64px;
-  h1 {
-    font-size: 46px;
-    line-height: 55px;
-  }
-}
-
 .work-title__smaller {
   font-size: 40px;
+
+  @include tablet {
+    font-size: 30px;
+  }
 }
 
 .work-image {
@@ -63,19 +100,10 @@
   }
 }
 
-.work-paragraph {
-  width: 70%;
-  margin: auto;
-
-  p {
-    width: 80%;
-    font-size: 18px;
-    color: $text;
-    line-height: 30px;
-  }
-}
-
 .work-list {
+  @include mobile {
+    margin-bottom: 34px;
+  }
   .work-list__title {
     h6 {
       font-size: 20px;
