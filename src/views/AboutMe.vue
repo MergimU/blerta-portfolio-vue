@@ -24,6 +24,8 @@
 </template>
 
 <script>
+import { useIntersectionObserver } from "@/composables/useIntersectionObserver";
+
 export default {
   name: "AboutMe",
   data() {
@@ -31,9 +33,19 @@ export default {
       observer: null,
     };
   },
-  mounted() {
-    this.setupObserver();
+
+  setup() {
+    const { observeElement } = useIntersectionObserver();
+
+    return {
+      observeElement,
+    };
   },
+  mounted() {
+    this.observeElement(this.$refs.left, "left");
+    this.observeElement(this.$refs.right, "right");
+  },
+
   beforeUnmount() {
     if (this.observer) {
       this.observer.disconnect();
@@ -42,35 +54,6 @@ export default {
   methods: {
     handleRouteChange(caseStudy) {
       this.$router.push({ name: caseStudy.route, params: { caseStudy } });
-    },
-    setupObserver() {
-      const options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.4,
-      };
-
-      this.observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            this.handleIntersection(entry.target);
-          }
-        });
-      }, options);
-
-      this.observer.observe(this.$refs.left);
-      this.observer.observe(this.$refs.right);
-    },
-    handleIntersection(target) {
-      if (target === this.$refs.left) {
-        this.$refs.left.classList.add("show");
-      } else if (target === this.$refs.right) {
-        setTimeout(() => {
-          this.$refs.right.classList.add("show");
-        }, 100);
-      }
-
-      this.observer.unobserve(target);
     },
   },
 };
