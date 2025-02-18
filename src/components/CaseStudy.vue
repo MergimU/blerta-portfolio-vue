@@ -1,11 +1,11 @@
 <template>
-  <div class="case__study">
-    <div class="case__study-left" ref="left">
+  <div class="case-study-preview">
+    <div class="case-study-preview__left" ref="left">
       <img :src="caseStudy.src" :alt="caseStudy.name" />
     </div>
 
     <div
-      class="case__study-right"
+      class="case-study-preview__right"
       :style="{ paddingTop: caseStudy.id === 1 ? '40px' : '22px' }"
       ref="right"
     >
@@ -15,13 +15,18 @@
           :color="caseStudy.titleTagColor"
           lineSize="small"
         />
-        <h3 class="case__study-name">{{ caseStudy.name }}</h3>
-        <p class="case__study__work-title">{{ caseStudy.workInfo }}</p>
-        <p class="case__study-description">{{ caseStudy.description }}</p>
-        <p class="case__study-intro" v-if="caseStudy.intro">
+        <h3 class="case-study-preview__name">{{ caseStudy.name }}</h3>
+        <p class="case-study-preview__work-title">{{ caseStudy.workInfo }}</p>
+        <p class="case-study-preview__description">
+          {{ caseStudy.description }}
+        </p>
+        <p class="case-study-preview__intro" v-if="caseStudy.intro">
           {{ caseStudy.intro }}
         </p>
-        <p @click="handleRouteChange(caseStudy)" class="case__study-action">
+        <p
+          @click="handleRouteChange(caseStudy)"
+          class="case-study-preview__action"
+        >
           Read Case study
         </p>
       </div>

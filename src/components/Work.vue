@@ -1,9 +1,9 @@
 <template>
-  <div class="intro work-intro">
+  <div class="work">
     <div class="name">
       <p>{{ subtitle }}</p>
     </div>
-    <div class="work-title">
+    <div class="work__title">
       <h1>{{ title }}</h1>
     </div>
 
@@ -11,7 +11,7 @@
       <img :src="firstImage" alt="" />
     </div>
 
-    <div class="work-paragraph">
+    <div class="work__paragraph">
       <p class="mb-4">
         Thrive is a community based, web3 platform for people to contribute and
         share skills with one another by exchanging the platform’s signature
@@ -37,7 +37,7 @@
       </figure>
     </div>
 
-    <div class="work-paragraph">
+    <div class="work__paragraph">
       <p>
         Being a startup, and still in search for the right look and feel, we
         went through multiple rounds of iterations on the early stages, multiple
@@ -50,7 +50,7 @@
       <img :src="thirdImage" />
     </div>
 
-    <div class="work-paragraph">
+    <div class="work__paragraph">
       <div class="mt-5 work-web3">
         <h2 class="work-title__smaller mb-3">
           Blockchain and the entry level barrier
@@ -86,7 +86,7 @@
       </figure>
     </div>
 
-    <div class="work-paragraph">
+    <div class="work__paragraph">
       <div class="mt-5 work-web3">
         <h2 class="work-title__smaller mb-3">E-Wallets and Payments</h2>
         <p>
@@ -113,7 +113,7 @@
       </figure>
     </div>
 
-    <div class="work-paragraph">
+    <div class="work__paragraph">
       <div class="mt-5 work-web3">
         <h2 class="work-title__smaller mb-3">Activity app</h2>
         <p>
