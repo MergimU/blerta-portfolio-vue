@@ -1,9 +1,12 @@
 <template>
-  <div class="social-media" ref="socialMedia">
-    <a :href="socialMedia.href" target="_blank">
-      <img :src="socialMedia.src" alt="" />
-    </a>
-  </div>
+  <a
+    class="social-media-link"
+    :href="socialMedia.href"
+    target="_blank"
+    ref="socialMedia"
+  >
+    <img :src="socialMedia.src" :alt="socialMedia.label" />
+  </a>
 </template>
 
 <script>

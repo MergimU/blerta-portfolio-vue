@@ -39,6 +39,13 @@
     }
   }
 
+  &__social-media {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+
   &__drawing {
     position: relative;
     margin-top: 40px;
@@ -61,14 +68,7 @@
   }
 }
 
-.social__medias-all {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  row-gap: 15px;
-}
-
-.social-media {
+.social-media-link {
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -87,7 +87,5 @@
     transition: all 100ms ease-in-out;
   }
   a {
-    display: flex;
-    align-items: center;
   }
 }
