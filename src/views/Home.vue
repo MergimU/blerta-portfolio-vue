@@ -1,10 +1,7 @@
 <template>
-  <div class="container__inner">
-    <div class="intro__section">
-      <Intro />
-      <Parallax />
-    </div>
-    <Work />
+  <div class="home">
+    <Intro />
+    <WorkHome />
     <AboutMe />
     <Footer />
   </div>
@@ -12,17 +9,15 @@
 
 <script>
 import Intro from "./Intro.vue";
-import Parallax from "./Parallax/Parallax.vue";
-import Work from "./Work.vue";
 import Footer from "./Footer.vue";
 import AboutMe from "./AboutMe.vue";
+import WorkHome from "./WorkHome.vue";
 
 export default {
-  name: "InnerContainer",
+  name: "Home",
   components: {
     Intro,
-    Parallax,
-    Work,
+    WorkHome,
     AboutMe,
     Footer,
   },

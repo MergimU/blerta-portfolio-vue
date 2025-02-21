@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 
-import InnerContainer from "@/views/InnerContainer";
+import Home from "@/views/Home";
 
 import Thrive from "../views/caseStudies/Thrive";
 import BAMFClinicPortal from "../views/caseStudies/BAMFClinicPortal";
@@ -15,7 +15,7 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: InnerContainer,
+    component: Home,
   },
   {
     path: "/case-studies/thrive",
