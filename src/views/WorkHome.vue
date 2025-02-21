@@ -1,10 +1,10 @@
 <template>
-  <div class="case-studies ref-work">
+  <div class="work-home ref-work">
     <transition name="fade">
-      <h1 id="work" class="case-studies__title" ref="left">Work</h1>
+      <h1 id="work" class="work-home__title" ref="left">Work</h1>
     </transition>
 
-    <div class="case-studies__cases">
+    <div class="work-home__cases">
       <CaseStudy
         v-for="(study, index) in caseStudies"
         :key="index"

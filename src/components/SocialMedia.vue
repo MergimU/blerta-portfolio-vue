@@ -1,5 +1,5 @@
 <template>
-  <div class="social__media" ref="socialMedia">
+  <div class="social-media" ref="socialMedia">
     <a :href="socialMedia.href" target="_blank">
       <img :src="socialMedia.src" alt="" />
     </a>

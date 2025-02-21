@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="container"
-    :style="`padding-bottom: ${getRoute === 'home' ? '320px' : 'none'}`"
-  >
+  <div class="container">
     <Navigation />
 
     <router-view></router-view>
