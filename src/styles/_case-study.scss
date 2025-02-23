@@ -1,6 +1,10 @@
 .case-study {
   padding-top: 104px;
 
+  @include tablet {
+    padding-top: 60px;
+  }
+
   &__title {
     margin-bottom: 72px;
     position: relative;
@@ -50,6 +54,10 @@
       font-size: 18px;
       color: $text;
       line-height: 30px;
+
+      @include tablet {
+        width: 100%;
+      }
     }
   }
 

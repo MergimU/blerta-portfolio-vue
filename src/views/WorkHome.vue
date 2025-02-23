@@ -1,8 +1,6 @@
 <template>
   <div class="work-home ref-work">
-    <transition name="fade">
-      <h1 id="work" class="work-home__title" ref="left">Work</h1>
-    </transition>
+    <h1 id="work" class="work-home__title" ref="left">Work</h1>
 
     <div class="work-home__cases">
       <CaseStudy

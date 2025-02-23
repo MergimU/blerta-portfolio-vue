@@ -4,11 +4,7 @@
       <img :src="caseStudy.src" :alt="caseStudy.name" />
     </div>
 
-    <div
-      class="work__right"
-      :style="{ paddingTop: caseStudy.id === 1 ? '40px' : '22px' }"
-      ref="right"
-    >
+    <div class="work__right" ref="right">
       <div>
         <TitleTag
           :title="caseStudy.titleTag"
@@ -56,7 +52,17 @@ export default {
   },
   methods: {
     handleRouteChange(caseStudy) {
-      this.$router.push({ name: caseStudy.route, params: { caseStudy } });
+      this.$router.push({
+        name: caseStudy.route,
+        // FEATURE: might use this later (to avoid using a state manager)
+        // query: {
+        //   caseStudy: JSON.stringify({
+        //     workInfo: caseStudy.workInfo,
+        //     name: caseStudy.name,
+        //     description: caseStudy.description,
+        //   }),
+        // },
+      });
     },
   },
 };
