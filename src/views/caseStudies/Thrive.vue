@@ -10,7 +10,7 @@
     </div>
 
     <div class="case-study__description">
-      <p class="mb-4">
+      <p>
         Thrive is a community based, web3 platform for people to contribute and
         share skills with one another by exchanging the platform's signature
         coin — thrivecoin.
@@ -170,8 +170,15 @@ export default {
     TitleTag,
     ListAppFeature,
   },
+  props: {
+    id: String,
+  },
+  mounted() {
+    console.log("state", this.$route.state);
+  },
   data() {
     return {
+      caseStudy: null,
       thrive: require("@/assets/images/thrive/thrive-1.png"),
       listAppFeature: [
         {
@@ -185,5 +192,9 @@ export default {
       ],
     };
   },
+  // created() {
+  // FEATURE: might use this later (to avoid using a state manager)
+  // this.caseStudy = JSON.parse(this.$route.query.caseStudy);
+  // },
 };
 </script>

@@ -17,7 +17,6 @@ $white: #fff;
   font-weight: bold !important;
 }
 
-
 .mt-1 {
   margin-top: 8px;
 }
@@ -42,7 +41,6 @@ $white: #fff;
   margin-top: 80px;
 }
 
-
 .mb-1 {
   margin-bottom: 8px;
 }
@@ -65,4 +63,8 @@ $white: #fff;
 
 .mb-80 {
   margin-bottom: 80px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
 }

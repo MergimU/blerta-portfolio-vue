@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;500;900&display=swap");
 
-//  Animations
-@import "./_animations.scss";
-//  Variables
-@import "./_variables.scss";
-//  Components
 @import "./_responsive.scss";
+@import "./_animations.scss";
+@import "./_variables.scss";
+
 @import "./components/index";
 @import "./_container.scss";
 @import "./_work.scss";
