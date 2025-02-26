@@ -5,7 +5,7 @@
       :key="idx"
       class="nav__link"
       @click="handleScrollToSection(link.route)"
-      :class="{ 'text__orange text__bold': link.orange }"
+      :class="{ 'nav__link--orange nav__link--bold': link.orange }"
     >
       {{ link.name }}
     </a>
