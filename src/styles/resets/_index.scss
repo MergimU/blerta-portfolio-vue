@@ -1,0 +1,48 @@
+//  Responsive
+
+html {
+  height: 100%;
+  overflow: auto;
+}
+body {
+  height: 100%;
+}
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bitter";
+  color: $text;
+}
+
+a,
+p,
+figcaption,
+li {
+  font-family: "Inter";
+}
+
+a,
+li {
+  color: $text;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  background-color: $white;
+}
