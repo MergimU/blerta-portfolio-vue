@@ -1,36 +1,17 @@
 .case-study {
-  padding-top: 104px;
+  padding: 104px 0;
 
   @include tablet {
-    padding-top: 60px;
+    padding: 60px 0;
+  }
+
+  .c-title-tag {
+    margin-bottom: 10px;
   }
 
   &__title {
     margin-bottom: 72px;
     position: relative;
-    // opacity: 0;
-    // transform: translateY(50px);
-
-    // h1 {
-    //   display: flex;
-    //   align-items: center;
-    //   font-weight: bold;
-    //   font-size: 32px;
-    //   color: $text;
-
-    //   @include tablet {
-    //     font-size: 24px;
-    //   }
-
-    //   // &:after {
-    //   //   content: "";
-    //   //   position: relative;
-    //   //   width: 80px;
-    //   //   height: 1px;
-    //   //   background-color: $secondary-text;
-    //   //   left: 24px;
-    //   // }
-    // }
   }
 
   &__subtitle {

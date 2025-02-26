@@ -6,7 +6,7 @@
     </div>
 
     <div class="case-study__large-image mb-80">
-      <img :src="thrive" alt="" />
+      <img :src="imageDummy" alt="" />
     </div>
 
     <div class="case-study__description">
@@ -30,7 +30,7 @@
 
     <div class="case-study__large-image mt-5 mb-3">
       <figure>
-        <img :src="thrive" />
+        <img :src="imageDummy" />
         <figcaption class="mt-2">Section from the user flow</figcaption>
       </figure>
     </div>
@@ -45,7 +45,7 @@
     </div>
 
     <div class="case-study__large-image mt-5 mb-80">
-      <img :src="thrive" />
+      <img :src="imageDummy" />
     </div>
 
     <div class="case-study__description">
@@ -79,7 +79,7 @@
 
     <div class="case-study__large-image mt-4">
       <figure>
-        <img :src="thrive" />
+        <img :src="imageDummy" />
         <figcaption class="mt-2">Designs from the Listing flow</figcaption>
       </figure>
     </div>
@@ -106,7 +106,7 @@
 
     <div class="case-study__large-image mt-4">
       <figure>
-        <img :src="thrive" />
+        <img :src="imageDummy" />
         <figcaption class="mt-2">Wallet and Payment interactions</figcaption>
       </figure>
     </div>
@@ -149,14 +149,12 @@
 
     <div class="case-study__large-image mt-4 mb-4">
       <figure>
-        <img :src="thrive" />
+        <img :src="imageDummy" />
         <figcaption class="mt-2">
           Designs from the Core and Activity App
         </figcaption>
       </figure>
     </div>
-
-    <br /><br />
   </div>
 </template>
 
@@ -170,16 +168,10 @@ export default {
     TitleTag,
     ListAppFeature,
   },
-  props: {
-    id: String,
-  },
-  mounted() {
-    console.log("state", this.$route.state);
-  },
   data() {
     return {
       caseStudy: null,
-      thrive: require("@/assets/images/thrive/thrive-1.png"),
+      imageDummy: require("@/assets/images/thrive/thrive-1.png"),
       listAppFeature: [
         {
           title: "Core app",

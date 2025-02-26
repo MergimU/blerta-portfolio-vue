@@ -31,15 +31,14 @@
 }
 
 .blerta {
-  position: absolute !important;
+  position: absolute;
   transform: scale(0.42);
-
   top: -205px;
   right: -250px;
 }
 
 .notebook {
-  position: absolute !important;
+  position: absolute;
   transform: scale(0.3);
 
   top: 460px;
@@ -47,7 +46,7 @@
 }
 
 .one-paper {
-  position: absolute !important;
+  position: absolute;
   transform: scale(0.4);
 
   top: 320px;
@@ -55,7 +54,7 @@
 }
 
 .chips-bag {
-  position: absolute !important;
+  position: absolute;
   transform: scale(0.36);
 
   top: 155px;
@@ -63,7 +62,7 @@
 }
 
 .chips {
-  position: absolute !important;
+  position: absolute;
   transform: scale(0.4);
 
   top: 40px;
@@ -71,7 +70,7 @@
 }
 
 .coffee {
-  position: absolute !important;
+  position: absolute;
   transform: scale(0.36);
   z-index: 5;
 

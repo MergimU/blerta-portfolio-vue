@@ -27,5 +27,13 @@
         padding-right: 0;
       }
     }
+
+    &--bold {
+      font-weight: bold;
+    }
+
+    &--orange {
+      color: $orange;
+    }
   }
 }
