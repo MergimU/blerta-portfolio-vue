@@ -1,15 +1,14 @@
 .explore-case-study {
-  &__body {
-    background: rgb(241, 184, 255);
-    background: linear-gradient(
-      345deg,
-      rgba(241, 184, 255, 1) 17%,
-      rgba(157, 166, 255, 1) 81%
-    );
-  }
+  .case-study {
+    padding-bottom: 0;
 
+    &__subtitle {
+      margin-bottom: 40px;
+    }
+  }
   .work {
     padding: 70px 30px 70px 70px;
+    margin-bottom: 0;
 
     @include tablet {
       padding: 40px;

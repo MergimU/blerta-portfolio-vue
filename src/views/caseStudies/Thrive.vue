@@ -44,8 +44,11 @@
       </p>
     </div>
 
-    <div class="case-study__large-image mt-5 mb-80">
-      <img :src="imageDummy" />
+    <div class="case-study__large-image mt-4">
+      <figure>
+        <img :src="imageDummy" />
+        <figcaption class="mt-2">Early visual explorations</figcaption>
+      </figure>
     </div>
 
     <div class="case-study__description">

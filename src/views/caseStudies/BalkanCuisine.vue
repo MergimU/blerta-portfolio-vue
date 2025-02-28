@@ -20,13 +20,13 @@
     <div class="case-study__large-image mt-5 mb-3">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Section from the user flow</figcaption>
+        <figcaption class="mt-2">Designs from the desktop site</figcaption>
       </figure>
     </div>
     <div class="case-study__large-image mt-5 mb-3">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Section from the user flow</figcaption>
+        <figcaption class="mt-2">Characters from the website</figcaption>
       </figure>
     </div>
   </div>

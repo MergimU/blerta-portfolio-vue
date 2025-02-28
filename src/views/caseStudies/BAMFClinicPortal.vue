@@ -55,7 +55,9 @@
     <div class="case-study__large-image mt-5 mb-3">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Section from the user flow</figcaption>
+        <figcaption class="mt-2">
+          Action needed urgently · Very high risk
+        </figcaption>
       </figure>
     </div>
 
@@ -89,7 +91,9 @@
     <div class="case-study__large-image mt-5 mb-3">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Section from the user flow</figcaption>
+        <figcaption class="mt-2">
+          Various states of the Scheduling Templates flow
+        </figcaption>
       </figure>
     </div>
 
@@ -108,7 +112,9 @@
     <div class="case-study__large-image mt-5 mb-3">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Section from the user flow</figcaption>
+        <figcaption class="mt-2">
+          Setting up tasks for each role through the Resource reservation flow.
+        </figcaption>
       </figure>
     </div>
 
@@ -124,8 +130,18 @@
       </div>
     </div>
 
-    <div class="case-study__large-image mt-5 mb-80">
-      <img :src="imageDummy" />
+    <div class="case-study__large-image mt-5 mb-3">
+      <figure>
+        <img :src="imageDummy" />
+        <figcaption class="mt-2">
+          Some of the issues we tackled on various stages of design in the
+          Calendar and Scheduling flows. <br />
+          Left: Defining the style of time blocks for various states · Middle:
+          Exploring whether we show how many resources are used during a
+          patients visit. <br />
+          Right: Exploring the substitute/alternative resource approach
+        </figcaption>
+      </figure>
     </div>
 
     <div class="case-study__description">
@@ -146,7 +162,7 @@
     <div class="case-study__large-image mt-4">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Designs from the Listing flow</figcaption>
+        <figcaption class="mt-2">Treatment Plan designs</figcaption>
       </figure>
     </div>
 
@@ -163,21 +179,8 @@
     <div class="case-study__large-image mt-5 mb-3">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Section from the user flow</figcaption>
       </figure>
     </div>
-
-    <!-- <div class="case-study__description">
-      <div class="mt-5">
-        <h2 class="case-study__subtitle mb-3">
-          Want to see more about my exploration phase? Check out this project
-        </h2>
-      </div>
-    </div>
-
-    <div class="work-home__cases">
-      <CaseStudy :caseStudy="visitCaseStudy" />
-    </div> -->
 
     <ExploreCaseStudy />
   </div>
@@ -185,7 +188,6 @@
 
 <script>
 import TitleTag from "@/components/ui/TitleTag.vue";
-// import CaseStudy from "@/components/CaseStudy.vue";
 import ExploreCaseStudy from "@/components/ExploreCaseStudy.vue";
 
 export default {
@@ -193,8 +195,6 @@ export default {
   components: {
     TitleTag,
     ExploreCaseStudy,
-
-    // CaseStudy,
   },
   data() {
     return {
