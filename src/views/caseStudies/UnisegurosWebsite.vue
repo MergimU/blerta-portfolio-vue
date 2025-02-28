@@ -12,7 +12,7 @@
     <div class="case-study__description">
       <p>
         Uniseguros is a panamian service company that acts as a middle man for
-        clients and insurance companies. One of the key features of the
+        clients and insurance companies. <br />One of the key features of the
         Uniseguros website was the ability to create a quote request without
         signing up, that way using the foot in the door technique we would
         slightly push potential clients in the direction of becoming users.
@@ -22,7 +22,7 @@
     <div class="case-study__large-image mt-5 mb-3">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Section from the user flow</figcaption>
+        <figcaption class="mt-2">Early approaches</figcaption>
       </figure>
     </div>
 
@@ -43,7 +43,9 @@
     <div class="case-study__large-image mt-5 mb-3">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Section from the user flow</figcaption>
+        <figcaption class="mt-2">
+          Exmaple of microinteractions we used in the design
+        </figcaption>
       </figure>
     </div>
 
@@ -68,7 +70,7 @@
     <div class="case-study__large-image mt-4">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Designs from the Listing flow</figcaption>
+        <figcaption class="mt-2">Characters created for Uniseguros</figcaption>
       </figure>
     </div>
 
@@ -89,7 +91,7 @@
     <div class="case-study__large-image mt-4">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Wallet and Payment interactions</figcaption>
+        <figcaption class="mt-2">Finished designs</figcaption>
       </figure>
     </div>
   </div>

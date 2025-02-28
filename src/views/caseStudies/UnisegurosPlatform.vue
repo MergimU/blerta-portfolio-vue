@@ -50,7 +50,7 @@
     <div class="case-study__large-image mt-5 mb-3">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Section from the user flow</figcaption>
+        <figcaption class="mt-2">User flows and sketch wireframes</figcaption>
       </figure>
     </div>
 
@@ -62,9 +62,9 @@
         results.
         <br />
         <br />
-        We’d usually practice the diverge and converge approach- I’d try out
+        We'd usually practice the diverge and converge approach- I'd try out
         various versions of a flow then through feedback with the UX architect,
-        PO and client we’d decide on the best approach. We worked closely so
+        PO and client we'd decide on the best approach. We worked closely so
         that problems were defined and dealt with as early as possible.
       </p>
     </div>
@@ -72,7 +72,7 @@
     <div class="case-study__large-image mt-5 mb-3">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Section from the user flow</figcaption>
+        <figcaption class="mt-2">Super early wireframes</figcaption>
       </figure>
     </div>
 
@@ -86,7 +86,7 @@
           <br />
           Panama had custom social norms that differed from the U.S. and Kosovo.
           They varied from small details, like the name format in legal
-          documents (names in Panama keep maternal’s surname too and not just
+          documents (names in Panama keep maternal's surname too and not just
           paternal one), to much bigger, subjective ones, like the spending
           culture and how they dealt with payments.
           <br />
@@ -108,7 +108,7 @@
           design.
           <br /><br />
           We tried out multiple approaches regarding the hierarchy, testing each
-          design for flaws and elements that wouldn’t hold for the long run.
+          design for flaws and elements that wouldn't hold for the long run.
         </p>
       </div>
     </div>
@@ -116,7 +116,7 @@
     <div class="case-study__large-image mt-4">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Designs from the Listing flow</figcaption>
+        <figcaption class="mt-2">Multiple approaches on the layout</figcaption>
       </figure>
     </div>
 
@@ -127,7 +127,7 @@
         </h2>
         <p>
           The People section was a particular fun but complex section in the
-          Agent platform. Seen from the agents’ perspective, it featured
+          Agent platform. Seen from the agents' perspective, it featured
           individual clients, who had multiple people under their coverage,
           parent organization along with their branches, and for the super
           admins, the agents and staff as well.
@@ -142,7 +142,9 @@
     <div class="case-study__large-image mt-4">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Wallet and Payment interactions</figcaption>
+        <figcaption class="mt-2">
+          Designs from the People section in the platform
+        </figcaption>
       </figure>
     </div>
 
@@ -173,7 +175,10 @@
     <div class="case-study__large-image mt-4">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Wallet and Payment interactions</figcaption>
+        <figcaption class="mt-2">
+          Left, organization card for mobile. Right, organization and group of
+          people cards for desktop
+        </figcaption>
       </figure>
     </div>
 
@@ -208,7 +213,9 @@
     <div class="case-study__large-image mt-4">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Wallet and Payment interactions</figcaption>
+        <figcaption class="mt-2">
+          Example how card states changed between each step
+        </figcaption>
       </figure>
     </div>
 
@@ -234,7 +241,7 @@
     <div class="case-study__large-image mt-4">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Wallet and Payment interactions</figcaption>
+        <figcaption class="mt-2">Designs from the mobile version</figcaption>
       </figure>
     </div>
 
@@ -253,7 +260,7 @@
     <div class="case-study__large-image mt-4">
       <figure>
         <img :src="imageDummy" />
-        <figcaption class="mt-2">Wallet and Payment interactions</figcaption>
+        <figcaption class="mt-2">Designs from the desktop version</figcaption>
       </figure>
     </div>
   </div>
