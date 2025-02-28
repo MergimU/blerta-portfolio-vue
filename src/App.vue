@@ -10,9 +10,5 @@ export default {
   components: {
     Container,
   },
-
-  mounted() {
-    window.scrollTo(0, 0);
-  },
 };
 </script>

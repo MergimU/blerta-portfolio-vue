@@ -24,6 +24,7 @@
 
   @include tablet {
     grid-template-columns: 1fr;
+    margin-bottom: 40px;
   }
 
   &:nth-child(even) {

@@ -93,6 +93,12 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title;
+  window.scrollTo(0, 0);
+
+  // Add smooth scroll after page change
+  let bodyTag = document.querySelector("body");
+  bodyTag.classList.remove("smooth-scroll");
+  bodyTag.classList.add("smooth-scroll");
   next();
 });
 
