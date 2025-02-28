@@ -39,6 +39,7 @@ export default {
         {
           titleTag: "DESKTOP, TABLET & MOBILE",
           titleTagColor: "#66ABF7",
+          buttonType: "btn btn--primary",
           workInfo: "Senior UX/UI · 2020 - Present",
           name: "BAMF Clinic and Radiopharmacy",
           description:
@@ -49,6 +50,7 @@ export default {
         {
           titleTag: "DESKTOP",
           titleTagColor: "#636CE5",
+          buttonType: "btn btn--primary",
           workInfo: "Design Lead · 2021 - 2022",
           name: "Thrive - Core & Activity app",
           description:
@@ -59,6 +61,7 @@ export default {
         {
           titleTag: "DESKTOP & MOBILE",
           titleTagColor: "#63C6A0",
+          buttonType: "btn btn--primary",
           workInfo: "Senior UX/UI · 2020 - Present",
           name: "BAMF Patient",
           description:
@@ -70,6 +73,7 @@ export default {
         {
           titleTag: "DESKTOP & MOBILE",
           titleTagColor: "#D79B70",
+          buttonType: "btn btn--primary",
           workInfo: "UX/UI Designer and Illustrator · 2019 - 2020",
           name: "Uniseguros platform",
           description:
@@ -80,6 +84,7 @@ export default {
         {
           titleTag: "DESKTOP & MOBILE",
           titleTagColor: "#FFCF68",
+          buttonType: "btn btn--primary",
           workInfo: "UX/UI Designer and Illustrator · 2019 - 2020",
           name: "Uniseguros website",
           description:
@@ -91,6 +96,7 @@ export default {
         {
           titleTag: "MOBILE",
           titleTagColor: "#92D739",
+          buttonType: "btn btn--primary",
           workInfo: "UX/UI Designer and Illustrator · 2018",
           name: "Friendict",
           description:
@@ -101,6 +107,7 @@ export default {
         {
           titleTag: "DESKTOP & MOBILE",
           titleTagColor: "#FB8787",
+          buttonType: "btn btn--primary",
           workInfo: "UX/UI Designer - 2018",
           name: "Express",
           description:
@@ -111,6 +118,7 @@ export default {
         {
           titleTag: "DESKTOP & MOBILE",
           titleTagColor: "#E6936F",
+          buttonType: "btn btn--primary",
           workInfo: "UX/UI Designer and Illustrator · 2017",
           name: "Balkan Cuisine",
           description:

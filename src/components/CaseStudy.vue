@@ -19,9 +19,12 @@
         <p class="work__intro" v-if="caseStudy.intro">
           {{ caseStudy.intro }}
         </p>
-        <p @click="handleRouteChange(caseStudy)" class="work__action">
+        <button
+          @click="handleRouteChange(caseStudy)"
+          :class="caseStudy.buttonType"
+        >
           Read Case study
-        </p>
+        </button>
       </div>
     </div>
   </div>

@@ -1,0 +1,36 @@
+.explore-case-study {
+  &__body {
+    background: rgb(241, 184, 255);
+    background: linear-gradient(
+      345deg,
+      rgba(241, 184, 255, 1) 17%,
+      rgba(157, 166, 255, 1) 81%
+    );
+  }
+
+  .work {
+    padding: 70px 30px 70px 70px;
+
+    @include tablet {
+      padding: 40px;
+    }
+
+    .c-title-tag {
+      display: none;
+    }
+
+    &__left {
+      order: 2;
+    }
+
+    &__name,
+    &__work-title,
+    &__description {
+      color: #fff;
+    }
+
+    &__work-title {
+      opacity: 0.7;
+    }
+  }
+}
