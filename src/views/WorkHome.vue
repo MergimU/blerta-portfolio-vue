@@ -17,7 +17,7 @@ import CaseStudy from "@/components/CaseStudy.vue";
 import { useIntersectionObserver } from "@/composables/useIntersectionObserver";
 
 export default {
-  name: "Work",
+  name: "WorkHome",
   components: {
     CaseStudy,
   },

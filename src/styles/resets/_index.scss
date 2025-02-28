@@ -1,20 +1,17 @@
 //  Responsive
 
-html {
-  height: 100%;
-  overflow: auto;
-}
-body {
-  height: 100%;
-}
-
 html,
 body,
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+}
+
+body {
+  &.smooth-scroll {
+    scroll-behavior: smooth;
+  }
 }
 
 h1,
